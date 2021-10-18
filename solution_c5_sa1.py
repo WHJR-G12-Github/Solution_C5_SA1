@@ -21,10 +21,11 @@ forward=False
 xvel=[]
 yvel=[]
 enemies=[]
+enemycount =10
 
 # Creating 10 'enemy' rectangles at random x,y coordinates
 # Assigning 10 random values to 'xvel', 'yvel' in the range of -3 to 3
-for i in range(10): 
+for i in range(enemycount): 
   enemies.append(pygame.Rect(random.randint(0,400),random.randint(0,600),20,20))
   xvel.append(random.randint(-3,3))
   yvel.append(random.randint(-3,3))
